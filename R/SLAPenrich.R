@@ -782,7 +782,7 @@ SLAPE.diff_SLAPE_analysis<-function(EM,contrastMatrix,positiveCondition,negative
     annotation_col = data.frame(SampleType = factor(c(rep(positiveCondition, ncol(positive_pathway_EM)),rep(negativeCondition, ncol(negative_pathway_EM)))))
     rownames(annotation_col)<-colnames(COMPD)
     
-    COMPD<-COMPD[c(1:30,(nrow(COMPD)-29):nrow(COMPD)),]
+    #COMPD<-COMPD[c(1:30,(nrow(COMPD)-29):nrow(COMPD)),]
     
     if(display){
         pdf(paste(PATH,'diffPathAlter.pdf',sep=''),10,10)
