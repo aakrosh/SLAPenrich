@@ -766,7 +766,7 @@ SLAPE.diff_SLAPE_analysis<-function(EM,contrastMatrix,positiveCondition,negative
     
     FDRs<- -log10(FDRs+.Machine$double.eps)
     
-    currentNames<-PATHCOM_HUMAN$PATHWAY[as.numeric(rownames(FDRs))]
+    currentNames<-PATH_COLLECTION$PATHWAY[as.numeric(rownames(FDRs))]
     suffixes<-rep('',length(currentNames))
     suffixes[which(str_length(currentNames)>50)]<-' ...'
     
